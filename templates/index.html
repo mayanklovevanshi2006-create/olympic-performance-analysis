@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b2c">
+  <title>Olympic Performance Analysis | Mayank Lavvanshi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Olympic Performance Analysis home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span>OLYMPIC<span class="brand-light"> / INSIGHTS</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#dashboard1">Global Performance</a>
+        <a href="#dashboard2">Efficiency &amp; Performance</a>
+        <a href="#story">The Olympic Story</a>
+      </div>
+      <a class="nav-index" href="#dashboard1"><span class="live-dot"></span> Explore dashboards <span aria-hidden="true">↘</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> GLOBAL SPORT · DATA STORY</div>
+        <h1>Every medal<br>has a <em>story.</em></h1>
+        <p class="hero-copy">Olympic Performance Analysis</p>
+        <p class="hero-byline">Interface redesigned by <strong>Mayank Lavvanshi</strong></p>
+        <a class="hero-cta" href="#dashboard1">Explore the analysis <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-side" aria-hidden="true">
+        <span class="hero-side-number">01</span>
+        <span class="hero-side-rule"></span>
+        <span class="hero-side-label">THE GAMES<br>IN NUMBERS</span>
+      </div>
+      <div class="hero-bottom"><span>SUMMER &amp; WINTER GAMES</span><span>1992 — 2026</span></div>
+    </section>
+
+    <section class="intro-strip" aria-label="Project overview">
+      <div class="intro-label">THE BIG PICTURE</div>
+      <p>Medal achievements, athlete participation, regional efficiency, sport-category performance and the relationship between sports investment and medal outcomes across Summer and Winter Games.</p>
+      <span class="intro-mark" aria-hidden="true">◎</span>
+    </section>
+
+    <div class="dashboard-area">
+      <section id="dashboard1" class="dashboard-section">
+        <div class="section-heading">
+          <div class="section-kicker"><span>01</span> COUNTRY MEDALS ANALYSIS</div>
+          <div class="heading-row"><h2>Global Olympic<br><em>Performance</em></h2><p>General Overview &amp; Country Medals Analysis</p></div>
+          <div class="section-index">DASHBOARD <b>01</b></div>
+        </div>
+        <div class="viz-frame"><div class="viz-topline"><span><i></i> INTERACTIVE TABLEAU DASHBOARD</span><a class="viz-open-link" href="https://public.tableau.com/app/profile/mayank.lavvanshi/viz/Olympic_Performance_AnalysisDashBoard1/01GlobalOlympicPerformance?publish=yes" target="_blank" rel="noopener noreferrer">OPEN ON TABLEAU ↗</a></div><div id="tableauViz1" class="viz-container"></div></div>
+      </section>
+
+      <section id="dashboard2" class="dashboard-section">
+        <div class="section-heading">
+          <div class="section-kicker"><span>02</span> ATHLETES &amp; EFFICIENCY</div>
+          <div class="heading-row"><h2>Efficiency &amp;<br><em>Performance</em></h2><p>Athlete Demographics &amp; Sport Efficiency Metrics</p></div>
+          <div class="section-index">DASHBOARD <b>02</b></div>
+        </div>
+        <div class="viz-frame"><div class="viz-topline"><span><i></i> INTERACTIVE TABLEAU DASHBOARD</span><a class="viz-open-link" href="https://public.tableau.com/app/profile/mayank.lavvanshi/viz/Olympic_Performance_AnalysisDashBoard2/02EfficiencyPerformance?publish=yes" target="_blank" rel="noopener noreferrer">OPEN ON TABLEAU ↗</a></div><div id="tableauViz2" class="viz-container"></div></div>
+      </section>
+
+      <section id="story" class="dashboard-section story-section">
+        <div class="section-heading">
+          <div class="section-kicker"><span>03</span> HISTORICAL TRENDS &amp; ACHIEVEMENTS</div>
+          <div class="heading-row"><h2>The Olympic<br><em>Story</em></h2><p>Guided narrative walkthrough of historical trends and achievements</p></div>
+          <div class="section-index">TABLEAU <b>STORY</b></div>
+        </div>
+        <div class="viz-frame"><div class="viz-topline"><span><i></i> INTERACTIVE TABLEAU STORY</span><a class="viz-open-link" href="https://public.tableau.com/app/profile/mayank.lavvanshi/viz/Olympic_Performance_AnalysisStory/TheOlympicStory?publish=yes" target="_blank" rel="noopener noreferrer">OPEN ON TABLEAU ↗</a></div><div id="tableauStoryViz" class="viz-container"></div></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>OLYMPIC<span class="brand-light"> / INSIGHTS</span></span></a>
+    <p>Interface redesigned by Mayank Lavvanshi <span>·</span> Source data &amp; Tableau workbook: <a href="https://github.com/mtanwani353-blip/olympic-performance-analysis/" target="_blank" rel="noopener noreferrer">original repository</a></p>
+    <a href="#top" class="back-top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var views = [
+        ["tableauViz1", "https://public.tableau.com/views/Olympic_Performance_AnalysisDashBoard1/01GlobalOlympicPerformance"],
+        ["tableauViz2", "https://public.tableau.com/views/Olympic_Performance_AnalysisDashBoard2/02EfficiencyPerformance"],
+        ["tableauStoryViz", "https://public.tableau.com/views/Olympic_Performance_AnalysisStory/TheOlympicStory"]
+      ];
+      views.forEach(function(view) {
+        var container = document.getElementById(view[0]);
+        if (!container) return;
+        var viz = document.createElement("tableau-viz");
+        viz.setAttribute("src", view[1]);
+        viz.setAttribute("toolbar", "bottom");
+        viz.setAttribute("hide-tabs", "");
+        container.appendChild(viz);
+      });
+    });
+  </script>
+</body>
+</html>
+
